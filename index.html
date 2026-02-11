@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu sistema</title>
+    <style>
+      body {
+        background-color: #3fbba3;
+        display: flex;
+        align-items: center;
+        font-family: Arial, sans-serif;
+        height: 100vh;
+        margin: 0;
+        justify-content: center;
+        color: #2a9d8f;
+      }
+
+      .container_login {
+        width: 100%;
+        background-color: #fff;
+        max-width: 400px;
+        padding: 40px 20px;
+        border-radius: 8px;
+      }
+
+      .container_login h1 {
+        margin-bottom: 30px;
+        text-align: center;
+      }
+
+      button {
+        background-color: #3fbba3;
+        color: white;
+        border: none;
+        padding: 12px;
+        width: 40%;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 15px;
+        display: block;
+        margin: 20px auto;
+      }
+
+      button:hover {
+        background-color: #2a9d8f;
+      }
+
+      .links {
+        margin-top: 15px;
+        text-align: center;
+        font-size: 14px;
+        color: black;
+      }
+
+      .links a {
+        color: #3fbba3;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      .links a:hover {
+        text-decoration: underline;
+      }
+
+      .input {
+        height: 50px;
+        width: 100%;
+        box-sizing: border-box;
+        padding-left: 10px;
+        margin-bottom: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      .input.error {
+        border: 2px solid red;
+      }
+
+      .error-message {
+        color: red;
+        font-size: 12px;
+        margin-bottom: 15px;
+        display: block;
+      }
+
+      .checkbox {
+        margin-bottom: 25px;
+        font-size: 14px;
+        color: black;
+      }
+    </style>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container_login">
+      <h1>Login</h1>
+
+      <input class="input" type="email" id="email" placeholder="Email" />
+      <small id="emailError" class="error-message"></small>
+
+      <input class="input" type="password" id="senha" placeholder="Senha" />
+      <small id="senhaError" class="error-message"></small>
+
+      <div class="checkbox">
+        <input type="checkbox" id="exibir_senha" />
+        <label for="exibir_senha">Exibir senha</label>
+      </div>
+
+      <button id="loginBtn" type="button">Entrar</button>
+
+      <div class="links">
+        Esqueceu
+        <a href="username.html" target="_blank">Nome de Usuario?</a> /
+        <a href="password.html" target="_blank">Senha</a>
+        ? <br />
+
+        Não tem uma conta?
+        <a href="cadastro.html" target="_blank">Cadastrar-se</a>
+      </div>
+    </div>
+  </body>
+</html>
