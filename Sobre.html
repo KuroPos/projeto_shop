@@ -13,7 +13,7 @@
         }
         .banner {
             background-color: #FFE636;
-            color: #333;
+            color: #030303;
             padding: 40px 20px;
             text-align: center;
         }
@@ -22,6 +22,41 @@
             font-size: 32px;
             font-weight: bold;
         }
+        .banner p {
+            margin: 10px 0 0;
+            font-size: 18px;
+        }
+        .conteiner_principal {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+        }
+
+        p {
+        line-height: 1.6;
+        margin-bottom: 20px;
+        }
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .feature {
+            flex: 1 1 250px;
+            background-color: #f9f9f9;
+            padding: 15;
+            border-radius: 6px;
+        }
+        .feature h3 {
+            margin-top: 0;
+        }
+        .feature p {
+            margin: 10px 0 0;
+        }
+
     </style>
   </head>
   <body>
@@ -30,7 +65,7 @@
   <p>Conheça a história e valores que nos movem</p>
 </header>
 
-    <div>
+    <div class="conteiner_principal">
       <h2>📘 Nossa História</h2>
       <p>
         A GeekShop foi fundada em 2020 com uma missão simples: trazer as
@@ -50,8 +85,8 @@
         de compra.
       </p>
       <h2>⭐ Por Que Escolher a GeekShop?</h2>
-      <div>
-        <div>
+      <div class="features">
+        <div class="feature">
             <h3>✔️ Autenticidade Garantida</h3>
             <p>Todos os nossos produtos são 100% autênticos e certificados.</p>
         </div>
