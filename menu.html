@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .menu {
+        background: linear-gradient(to right, #0a1f44, #1c3b70);
+        padding: 15px 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 4px solid #ffe636;
+      }
+
+      .menu .logo {
+        color: #ffe636;
+        font-weight: bold;
+        font-size: 20px;
+      }
+
+      .right-side {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+
+      .menu ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+        margin: 0;
+        padding: 0;
+      }
+
+      .menu ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      .menu ul li a:hover {
+        color: #ffe636;
+      }
+
+      .menu .cart {
+        background: #ffe636;
+        padding: 6px 12px;
+        border-radius: 6px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="menu">
+      <div class="logo">GEEKSHOP</div>
+      <div class="right-side">
+        <ul>
+          <li><a href="produtos.html">Produtos</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+        <div class="cart">🛒 <span>0</span></div>
+      </div>
+    </nav>
+  </body>
+</html>

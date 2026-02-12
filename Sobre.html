@@ -85,6 +85,15 @@
     </style>
   </head>
   <body>
+    <div id="menu"></div>
+
+    <script>
+      fetch("menu.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("menu").innerHTML = data;
+        });
+    </script>
     <header class="banner">
       <h1>Sobre a GeekShop</h1>
       <p>Conheça a história e valores que nos movem</p>
