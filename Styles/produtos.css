@@ -56,6 +56,17 @@ body {
   color: #333;
   margin-top: 5px;
 }
+.subtitulo {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 20px 0;
+  color: #030303;
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 0.1px;
+  font-style: sans-serif;
+}
 
 @media (max-width: 600px) {
   .banner h1 {
