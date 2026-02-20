@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Menu Inicial</title>
     <style>
       .menu {
         background: linear-gradient(to right, #0a1f44, #1c3b70);
@@ -17,7 +17,21 @@
       .menu .logo {
         color: #ffe636;
         font-weight: bold;
-        font-size: 20px;
+        font-size: 32px;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+      .menu .logo:hover {
+        color: #fff;
+      }
+      .menu .logo a {
+        color: #ffe636;
+        font-weight: bold;
+        font-size: 32px;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 2px;
       }
 
       .right-side {
@@ -54,12 +68,15 @@
   </head>
   <body>
     <nav class="menu">
-      <div class="logo">GEEKSHOP</div>
+      <div class="logo">
+        <a href="/pages/home.html">GEEKSHOP</a>
+      </div>
+
       <div class="right-side">
         <ul>
-          <li><a href="produtos.html">Produtos</a></li>
-          <li><a href="sobre.html">Sobre</a></li>
-          <li><a href="contato.html">Contato</a></li>
+          <li><a href="/pages/produtos.html">Produtos</a></li>
+          <li><a href="/pages/sobre.html">Sobre</a></li>
+          <li><a href="/pages/contato.html">Contato</a></li>
         </ul>
         <div class="cart">🛒 <span>0</span></div>
       </div>

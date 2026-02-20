@@ -39,7 +39,7 @@ loginBtn.addEventListener("click", () => {
   if (!camposValidos) return;
 
   if (email === "senai@gmail.com" && senha === "senai") {
-    window.open("home.html", "_blank");
+    window.open("/pages/home.html", "_blank");
   } else {
     emailInput.classList.add("error");
     senhaInput.classList.add("error");

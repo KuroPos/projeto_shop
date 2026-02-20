@@ -88,7 +88,7 @@
     <div id="menu"></div>
 
     <script>
-      fetch("menu.html")
+      fetch("/Styles/menu.html")
         .then((response) => response.text())
         .then((data) => {
           document.getElementById("menu").innerHTML = data;
