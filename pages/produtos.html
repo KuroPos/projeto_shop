@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Produtos - GeekShop</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f9;
+      }
+
+      .banner {
+        background-color: #ffe636;
+        color: #030303;
+        padding: 30px 20px;
+        text-align: center;
+      }
+
+      .banner h1 {
+        margin: 0;
+        font-size: 28px;
+        font-weight: bold;
+      }
+
+      .banner p {
+        margin-top: 8px;
+        font-size: 16px;
+      }
+
+      .produtos {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 20px;
+        padding: 30px;
+        max-width: 1000px;
+        margin: auto;
+      }
+
+      .card {
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        padding: 15px;
+        text-align: center;
+      }
+
+      .card img {
+        max-width: 100%;
+        border-radius: 6px;
+      }
+
+      .card h3 {
+        margin: 10px 0;
+        font-size: 18px;
+        color: #2a9d8f;
+      }
+
+      .card p {
+        font-size: 14px;
+        color: #333;
+      }
+
+      @media (max-width: 600px) {
+        .banner h1 {
+          font-size: 22px;
+        }
+
+        .banner p {
+          font-size: 14px;
+        }
+
+        .produtos {
+          grid-template-columns: 1fr;
+          padding: 15px;
+        }
+
+        .card {
+          padding: 12px;
+        }
+
+        .card h3 {
+          font-size: 16px;
+        }
+
+        .card p {
+          font-size: 13px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="menu"></div>
+
+    <script>
+      fetch("/Styles/menu.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("menu").innerHTML = data;
+        });
+    </script>
+    <header class="banner">
+      <h1>🛒 Nossos Produtos</h1>
+      <p>Confira os itens disponíveis na GeekShop</p>
+    </header>
+
+    <section class="produtos">
+      <div class="card">
+        <img
+          src="https://dz3we2x72f7ol.cloudfront.net/expansions/151/pt-br/SV3pt5_PTBR_205.png"
+          alt="Mew Ex"
+        />
+        <h3>Mew Ex</h3>
+        <p>
+          Dizem que podia ser pego embaixo de um caminhão em um certo jogo...
+        </p>
+      </div>
+
+      <div class="card">
+        <img
+          src="https://assets.pokemon.com/static-assets/content-assets/cms2-pt-br/img/cards/web/SV04/SV04_PT-BR_93.png"
+          alt="Groudon"
+        />
+        <h3>Groudon</h3>
+        <p>VOU FAZER TUDO VIRAR TERRA PRA MATAR AQUELE ###.</p>
+      </div>
+
+      <div class="card">
+        <img
+          src="https://m.media-amazon.com/images/I/51-VJPILikL._AC_UF894,1000_QL80_.jpg"
+          alt="kyogre"
+        />
+        <h3>kyogre</h3>
+        <p>VAI TUDO VIRAR AGUA PRA MATAR AQUELE ###</p>
+      </div>
+
+      <div class="card">
+        <img
+          src="https://i.etsystatic.com/51309587/r/il/bdf5bb/6880964538/il_fullxfull.6880964538_5gpr.jpg"
+          alt="rayquaza Shiny"
+        />
+        <h3>Rayquaza Shiny</h3>
+        <p>MEGA RAYQUAZA SHINY COM 6 IVS PERFEITOS</p>
+      </div>
+    </section>
+  </body>
+</html>
